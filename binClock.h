@@ -16,8 +16,19 @@ class bin_Clock
 		* @brief Constructor que crea un reloj inicializado con los parametros que se le dan y los segundos en 00.
 		* @param hora Entero que indica la hora con la que se inicializara el reloj.
 		* @param mins Entero que indica los minutos con los que se inicializara el reloj.
+		* @param secs Entero que indica los segundos con los que se inicializara el reloj.
+		*/
+		bin_Clock(int hora,int mins,int secs);
+		/**
+		* @brief Constructor que crea un reloj inicializado con los parametros que se le dan y los segundos en 00.
+		* @param hora Entero que indica la hora con la que se inicializara el reloj.
+		* @param mins Entero que indica los minutos con los que se inicializara el reloj.
 		*/
 		bin_Clock(int hora,int mins);
+		/**
+		* @brief Metodo que incrementa en 1 los segundos del reloj.
+		*/
+		void incrementar_ClockS();
 		/**
 		* @brief Metodo que incrementa en 1 los minutos del reloj.
 		*/
@@ -34,6 +45,7 @@ class bin_Clock
 		* @typedef minutos Objeto del tipo BCD (Binary Coded Decimal) que representa las minutos en esta clase.
 		*/
 		BCD minutos;
+		BCD segundos;
 		//void imprimir_BinC();
 	private:
 		/*
@@ -42,6 +54,13 @@ class bin_Clock
 		* @param mins Los minutos con los que se configurará el reloj.
 		*/
 		void set_Clock(int hora, int mins);
+		/*
+		* @brief Función privada que configura el reloj binario a corde a los parametros que se le pase.
+		* @param hora La hora con la que se configurará el reloj.
+		* @param mins Los minutos con los que se configurará el reloj.
+		* @param secs Los segundos con los que se configurará el reloj.
+		*/
+		void set_Clock(int hora, int mins,int secs);
 
 };
 
