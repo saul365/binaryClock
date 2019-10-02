@@ -63,7 +63,12 @@ class bin_Clock
 		void set_Clock(int hora, int mins,int secs);
 
 };
+/*
+	agregar:
+		cronometro
+		alarmas/temporizador
 
+*/
 
 
 

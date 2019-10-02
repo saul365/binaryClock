@@ -54,12 +54,12 @@ int main(void)
 	 	//digitalWrite(LED_BUILTIN,0);
 	 	//digitalWrite(LED_BUILTIN,1);
 
-	 	printLED(reloj);
 
 	 	//for (int i = 0; i < 60; ++i){
 	 		//delay( 1000 );
 	 		//digitalWrite(LED_BUILTIN,0);
 		if(!digitalRead(7)){
+	 		printLED(reloj);
 			reloj.incrementar_ClockS()	;
 	 		delay(500);
 			//printf("uuhhhhhhhhhhhhhm");
